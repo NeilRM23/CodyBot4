@@ -42,7 +42,7 @@ SPECIALSTRAT = False
 # 'FOLLOW' CONFIGURATION
 # By default a general 'follow' strategy is applied, that is, follow the closest: Exit, Enemy or Kix, follow also Ryo too but only if this is close to be caught (can move only to one tile)
 
-DEFAULT_TARGETS = True
+DEFAULT_TARGETS = False
 
 # RULES OF 'FOLLOW'
 # If one of the next options are set to True it will overlap the DEFAULT_TARGETS option
@@ -53,7 +53,7 @@ FALLBACK_TO_DEFAULT = True
 
 # Names of the options are self-explanatory
 
-GO_ENEMY = False
+GO_ENEMY = True
 
 GO_RYO = False
 
