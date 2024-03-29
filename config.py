@@ -20,7 +20,7 @@ if ImportFailed:
 # The numbers corresponding to the game modes can be obtained from the api doc https://codyfight.com/api-doc
 # Change this variable if you want to deploy in the other modes
 # 0 = Sandbox  /  1 = Friendly Duel  /  3 = Llama Maze
-GAMEMODE = 0
+GAMEMODE = 3
 
 # This variable defines if the json responses are stored
 # Change this variable to False so that it does not save the history, recommended if the bot is deployed in the cloud
@@ -42,7 +42,7 @@ SPECIALSTRAT = False
 # 'FOLLOW' CONFIGURATION
 # By default a general 'follow' strategy is applied, that is, follow the closest: Exit, Enemy or Kix, follow also Ryo too but only if this is close to be caught (can move only to one tile)
 
-DEFAULT_TARGETS = False
+DEFAULT_TARGETS = True
 
 # RULES OF 'FOLLOW'
 # If one of the next options are set to True it will overlap the DEFAULT_TARGETS option
@@ -53,12 +53,12 @@ FALLBACK_TO_DEFAULT = True
 
 # Names of the options are self-explanatory
 
-GO_ENEMY = True
+GO_ENEMY = False
 
 GO_RYO = False
 
 # Similar to GO_RYO but it will only follow him if its close to be caught
-GO_RYO_SURROUNDED = False
+GO_RYO_SURROUNDED = True
 
 GO_KIX = False
 
@@ -66,7 +66,7 @@ GO_LLAMA = False
 
 GO_BUZZ = False
 
-GO_EXIT = False
+GO_EXIT = True
 
 GO_TELEPORT = False
 
@@ -79,7 +79,7 @@ GO_RIPPER = False
 # Only the attacks that do damage will be executed following this options
 
 # The DEFAULT_ATTACK option is: attack Enemy or Kix
-DEFAULT_ATTACK = True
+DEFAULT_ATTACK = False
 
 # RULES OF ATTACK
 # Similar to follow rules. If one of the below options are True it will overlap DEFAULT_ATTACK option
@@ -89,7 +89,7 @@ ATTACK_ENEMY = False
 
 ATTACK_RYO = False
 
-ATTACK_KIX = False
+ATTACK_KIX = True
 
 ATTACK_LLAMA = False
 
